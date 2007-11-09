@@ -1,6 +1,6 @@
 %define name      fbdesk
-%define version   1.4.0
-%define release   %mkrel 3
+%define version   1.4.1
+%define release   %mkrel 1
 %define section   Fluxbox/action
 %define title     Fbdesk
 %define longtitle Fluxbox-application to create and manage icons on your desktop
@@ -15,7 +15,7 @@ URL:              http://fluxbox.sourceforge.net/fbdesk
 Source0:          http://fluxbox.sourceforge.net/fbdesk/%{name}-%{version}.tar.bz2
 Source1:          %name-icons.tar.bz2
 BuildRoot:        %_tmppath/%{name}-%{version}-%{release}-buildroot
-Buildrequires:    XFree86-devel 
+Buildrequires:    XFree86-devel
 Buildrequires:    png-devel
 Buildrequires:    imlib2-devel
 
