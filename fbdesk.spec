@@ -15,7 +15,7 @@ URL:              http://fluxbox.sourceforge.net/fbdesk
 Source0:          http://fluxbox.sourceforge.net/fbdesk/%{name}-%{version}.tar.bz2
 Source1:          %name-icons.tar.bz2
 BuildRoot:        %_tmppath/%{name}-%{version}-%{release}-buildroot
-Buildrequires:    XFree86-devel
+Buildrequires:    X11-devel
 Buildrequires:    png-devel
 Buildrequires:    imlib2-devel
 
