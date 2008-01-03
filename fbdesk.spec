@@ -19,7 +19,6 @@ Buildrequires:    png-devel
 Buildrequires:    imlib2-devel
 
 %description
-
 FbDesk is a fluxbox-application to create and manage icons on your desktop.
 
 Implemented Features :
