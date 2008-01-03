@@ -1,7 +1,6 @@
 %define name      fbdesk
 %define version   1.4.1
 %define release   %mkrel 1
-%define section   Fluxbox/action
 %define title     Fbdesk
 %define longtitle Fluxbox-application to create and manage icons on your desktop
 
@@ -48,15 +47,15 @@ Implemented Features :
 %makeinstall
 
 # Menu
-mkdir -p %buildroot%{_menudir}
-cat > %buildroot%_menudir/%name << EOF
-?package(%name): \
-command="%{_bindir}/%{name}" \
-needs="fluxexec" \
-icon="%{name}.png" \
-section="%{section}" \
-title="%{title}" \
-longtitle="%{longtitle}"
+mkdir -p $RPM_BUILD_ROOT%{_datadir}/applications/
+cat << EOF > %buildroot%{_datadir}/applications/mandriva-%name.desktop
+[Desktop Entry]
+Type=Application
+Exec=%{_bindir}/%{name}
+Icon=%{name}
+Categories=Graphics;2DGraphics;
+Name=%{title}
+Comment=%{longtitle}
 EOF
 
 # icon
@@ -83,7 +82,7 @@ rm -rf %buildroot
 %defattr(-,root,root)
 %doc README
 %_bindir/*
-%_menudir/*
+%{_datadir}/applications/mandriva-*.desktop
 
 %_miconsdir/*
 %_iconsdir/*
