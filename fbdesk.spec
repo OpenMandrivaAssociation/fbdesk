@@ -66,11 +66,15 @@ EOF
 %__install -m 0644 *.png %buildroot%_datadir/%name
 
 
+%if %mdkversion < 200900
 %post
 %update_menus
+%endif
 
+%if %mdkversion < 200900
 %postun
 %clean_menus
+%endif
 
 
 %clean
