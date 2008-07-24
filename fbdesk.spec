@@ -1,6 +1,6 @@
 %define name      fbdesk
 %define version   1.4.1
-%define release   %mkrel 1
+%define release   %mkrel 3
 %define title     Fbdesk
 %define longtitle Fluxbox-application to create and manage icons on your desktop
 
