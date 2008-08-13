@@ -13,6 +13,7 @@ Group:            Graphical desktop/Other
 URL:              http://fluxbox.sourceforge.net/fbdesk
 Source0:          http://fluxbox.sourceforge.net/fbdesk/%{name}-%{version}.tar.bz2
 Source1:          %name-icons.tar.bz2
+Patch0:		  fbdesk-1.4.1-gcc-4.3.patch
 BuildRoot:        %_tmppath/%{name}-%{version}-%{release}-buildroot
 Buildrequires:    X11-devel
 Buildrequires:    png-devel
@@ -33,17 +34,17 @@ Implemented Features :
 
 
 %prep
-
 %setup -q
 %setup -q -T -D -a1
+%patch0 -p1
 
 %build
-%configure
+%configure2_5x
 %make
 
 %install
 %__rm -rf %buildroot
-%makeinstall
+%makeinstall_std
 
 # Menu
 mkdir -p $RPM_BUILD_ROOT%{_datadir}/applications/
@@ -86,12 +87,7 @@ rm -rf %buildroot
 %doc README
 %_bindir/*
 %{_datadir}/applications/mandriva-*.desktop
-
-%_miconsdir/*
-%_iconsdir/*
-%_liconsdir/*
-%_datadir/%name/*.png
-
-%dir %_datadir/%name
-
-
+%_miconsdir/*.png
+%_iconsdir/*.png
+%_liconsdir/*.png
+%_datadir/%name
