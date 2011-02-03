@@ -1,6 +1,6 @@
 %define name      fbdesk
 %define version   1.4.1
-%define release   %mkrel 5
+%define release   %mkrel 6
 %define title     Fbdesk
 %define longtitle Fluxbox-application to create and manage icons on your desktop
 
@@ -15,8 +15,11 @@ Source0:          http://fluxbox.sourceforge.net/fbdesk/%{name}-%{version}.tar.b
 Source1:          %name-icons.tar.bz2
 Patch0:		  fbdesk-1.4.1-gcc-4.3.patch
 BuildRoot:        %_tmppath/%{name}-%{version}-%{release}-buildroot
-Buildrequires:    X11-devel
-Buildrequires:    png-devel
+Buildrequires:    libx11-devel
+Buildrequires:    libxext-devel
+Buildrequires:    libxft-devel
+Buildrequires:    libxpm-devel
+Buildrequires:    libxrender-devel
 Buildrequires:    imlib2-devel
 
 %description
