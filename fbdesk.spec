@@ -94,3 +94,73 @@ rm -rf %buildroot
 %_iconsdir/*.png
 %_liconsdir/*.png
 %_datadir/%name
+
+
+%changelog
+* Thu Feb 03 2011 Funda Wang <fwang@mandriva.org> 1.4.1-6mdv2011.0
++ Revision: 635413
+- simplify BR
+
+* Thu Dec 09 2010 Oden Eriksson <oeriksson@mandriva.com> 1.4.1-5mdv2011.0
++ Revision: 618257
+- the mass rebuild of 2010.0 packages
+
+* Thu Sep 03 2009 Thierry Vignaud <tv@mandriva.org> 1.4.1-4mdv2010.0
++ Revision: 428708
+- rebuild
+
+* Wed Aug 13 2008 Funda Wang <fwang@mandriva.org> 1.4.1-3mdv2009.0
++ Revision: 271537
+- add gcc 4.3 patch from gentoo
+
+  + Thierry Vignaud <tv@mandriva.org>
+    - rebuild
+
+  + Pixel <pixel@mandriva.com>
+    - rpm filetriggers deprecates update_menus/update_scrollkeeper/update_mime_database/update_icon_cache/update_desktop_database/post_install_gconf_schemas
+
+* Thu Jan 03 2008 Thierry Vignaud <tv@mandriva.org> 1.4.1-1mdv2008.1
++ Revision: 141839
+- fix spacing at top of description
+- auto-convert XDG menu entry
+- kill re-definition of %%buildroot on Pixel's request
+- buildrequires X11-devel instead of XFree86-devel
+
+  + Olivier Blin <oblin@mandriva.com>
+    - restore BuildRoot
+
+  + J√©r√¥me Soyer <saispo@mandriva.org>
+    - New release
+    - import fbdesk
+
+
+* Sun Apr 23 2006 Nicolas LÈcureuil <neoclust@mandriva.org> 1.4.0-3mdk
+- Really fix BuildRequires
+
+* Sun Apr 23 2006 Nicolas LÈcureuil <neoclust@mandriva.org> 1.4.0-2mdk
+- Add BuildRequires
+
+* Thu Apr 06 2006 Lenny Cartier <lenny@mandriva.com> 1.4.0-1mdk
+- 1.4.0
+
+* Thu Oct 06 2005 Lenny Cartier <lenny@mandriva.com> 1.2.1-1mdk
+- 1.2.1
+
+* Wed Jul 14 2004 Michael Scherer <misc@mandrake.org> 1.1.5-2mdk 
+- rebuild for new gcc, patch #0
+
+* Sun Oct 19 2003 Han Boetes <han@linux-mandrake.com> 1.1.5-1mdk
+- Various Fixes among which the dreaded menu.
+  Just that you need to have fluxbox installed :S
+
+* Fri May 23 2003 Han Boetes <han@linux-mandrake.com> 1.1.4-2mdk
+- Added dir entry to make distriblint happy
+
+* Mon May 19 2003 Han Boetes <han@linux-mandrake.com> 1.1.4-1mdk
+- New release.
+
+* Thu Jan 30 2003 Han Boetes <han@linux-mandrake.com> 1.1.3-1mdk
+- Bump. bugfix-release.
+
+* Sun Jan 19 2003 Han Boetes <han@linux-mandrake.com> 1.1.2-1mdk
+- Initial release.
