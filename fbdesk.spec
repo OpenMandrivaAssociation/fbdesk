@@ -15,11 +15,11 @@ Source0:          http://fluxbox.sourceforge.net/fbdesk/%{name}-%{version}.tar.b
 Source1:          %name-icons.tar.bz2
 Patch0:		  fbdesk-1.4.1-gcc-4.3.patch
 BuildRoot:        %_tmppath/%{name}-%{version}-%{release}-buildroot
-Buildrequires:    libx11-devel
-Buildrequires:    libxext-devel
-Buildrequires:    libxft-devel
-Buildrequires:    libxpm-devel
-Buildrequires:    libxrender-devel
+Buildrequires:    pkgconfig(x11)
+Buildrequires:    pkgconfig(xext)
+Buildrequires:    pkgconfig(xft)
+Buildrequires:    pkgconfig(xpm)
+Buildrequires:    pkgconfig(xrender)
 Buildrequires:    imlib2-devel
 
 %description
