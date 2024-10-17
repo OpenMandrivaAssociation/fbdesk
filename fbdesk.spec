@@ -10,7 +10,7 @@ Version:          %version
 Release:          %release
 License:          MIT
 Group:            Graphical desktop/Other
-URL:              http://fluxbox.sourceforge.net/fbdesk
+URL:              https://fluxbox.sourceforge.net/fbdesk
 Source0:          http://fluxbox.sourceforge.net/fbdesk/%{name}-%{version}.tar.bz2
 Source1:          %name-icons.tar.bz2
 Patch0:		  fbdesk-1.4.1-gcc-4.3.patch
