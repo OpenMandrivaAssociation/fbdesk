@@ -14,6 +14,11 @@ URL:              https://fluxbox.sourceforge.net/fbdesk
 Source0:          http://fluxbox.sourceforge.net/fbdesk/%{name}-%{version}.tar.bz2
 Source1:          %name-icons.tar.bz2
 Patch0:		  fbdesk-1.4.1-gcc-4.3.patch
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 Buildrequires:    pkgconfig(x11)
 Buildrequires:    pkgconfig(xext)
 Buildrequires:    pkgconfig(xft)
